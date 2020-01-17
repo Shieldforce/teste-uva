@@ -1,0 +1,95 @@
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 769px) {
+
+    .navbar{
+        height: 60px;
+    }
+    .font-title-navbar{
+        margin-top: 7px;
+        background-image: url(../images/logo2.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        color: transparent;
+    }
+    .main-blue{
+        margin: 250px 0 0 0;
+        background-color: #35A9DD;
+        height: 317px;
+    }
+    .div-form-box{
+        margin-top: -450px;
+        margin-left: -15px;
+        width: 740PX;
+        height: 576px;
+        background-color: white;
+        box-shadow: 0 0 1em #cecece;
+        padding: 80px;
+    }
+    .h3-title-form{
+        font-size: 20pt;
+        color: #35A9DD;
+    }
+    .p-title-form{
+        font-size: 17pt;
+        color: #878787;
+    }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 321px) and (max-width: 768px) {
+
+    .font-title-navbar{
+        background-image: url(../images/logo2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        color: transparent;
+    }
+    .main-blue{
+        margin: 200px 0 0 0;
+        background-color: #35A9DD;
+        height: 300px;
+    }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+
+}
