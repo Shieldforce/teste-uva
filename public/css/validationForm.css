@@ -1,0 +1,7 @@
+.error_field{
+    border-color: red !important;
+}
+
+.success_field{
+    border-color: green !important;
+}

@@ -16,6 +16,8 @@
         <link rel="stylesheet" type="text/css" href="css/all.min.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/validationForm.css" rel="stylesheet">
+        <link href="js/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
         <!------------------------------------------->
         <title>Compara Online</title>
     </head>
@@ -31,26 +33,37 @@
             <div class="main-blue col-12"></div>
             <div class="container">
                 <div class="div-form-box">
-
                     <h3 class="h3-title-form text-center">Faça a cotação do seguro do seu veículo</h3>
                     <p class="p-title-form text-center">Entraremos em contato com você</p>
-
-                    <form method="post">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <form method="post" class="fom-action">
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="name">Nome </label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">E-mail </label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="type_doc">Tipo do Documento </label>
+                                <select class="form-control" id="type_doc" name="type_doc">
+                                    <option value="">Tipo de Doc</option>
+                                    <option value="Cedula">Cedula </option>
+                                    <option value="Cedula extranjería">Cedula extranjería</option>
+                                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="number_doc">Número do Documento </label>
+                                <input type="text" class="form-control" id="number_doc">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-primary btn-cotar col-md-12 col-sm-12 col-xs-12">Cotar </button>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+                    <div class="link-recovery text-center"><a href="#">Recuperar cotação</a></div>
                 </div>
             </div>
         </div>
@@ -59,5 +72,8 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/fontawesome.min.js"></script>
         <script src="js/all.min.js"></script>
+        <script src="js/sweetalert2/dist/sweetalert2.all.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.mask.js"></script>
     </body>
 </html>
